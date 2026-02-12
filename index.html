@@ -138,37 +138,43 @@
 
 </div>
 <section id="contact">
+   <section>
     <h2>Contact Me</h2>
 
-    <form id="contactForm">
+    <form id="contactForm" novalidate>
 
-        <input 
-            type="text" 
-            id="name" 
-            placeholder="Your Name"
-        >
+        <input type="text" id="name" placeholder="Full Name">
 
-        <input 
-            type="email" 
-            id="email" 
-            placeholder="Your Email"
-        >
+        <input type="email" id="email" placeholder="Email Address">
 
-        <textarea 
-            id="message" 
-            placeholder="Your Message"
-            rows="5">
-        </textarea>
+        <input type="tel" id="phone" placeholder="Phone Number">
+
+        <input type="text" id="subject" placeholder="Subject">
+
+        <select id="reason">
+            <option value="">Select Reason for Contact</option>
+            <option value="internship">Internship Opportunity</option>
+            <option value="project">Project Collaboration</option>
+            <option value="freelance">Freelance Work</option>
+            <option value="other">Other</option>
+        </select>
+
+        <textarea id="message" placeholder="Your Message"></textarea>
+
+        <label style="font-size:14px;">
+            <input type="checkbox" id="terms">
+            I agree to be contacted back.
+        </label>
 
         <button type="submit">Send Message</button>
 
-        <p id="formMsg"></p>
+        <p id="formStatus"></p>
 
     </form>
 </section>
 
-<!-- LINK JS -->
 <script src="form.js"></script>
+
 
 
 </body>
