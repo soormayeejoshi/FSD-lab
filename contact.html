@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Soormayee Joshi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header style="text-align:center;">
+        <h1>Get In Touch</h1>
+        <p>Please fill the form below</p>
+    </header>
+
+    <form id="contactForm" novalidate>
+
+        <input type="text" id="name" placeholder="Full Name">
+        <input type="email" id="email" placeholder="Email Address">
+        <input type="tel" id="phone" placeholder="Phone Number">
+        <input type="text" id="subject" placeholder="Subject">
+
+        <select id="reason">
+            <option value="">Select Reason for Contact</option>
+            <option value="internship">Internship Opportunity</option>
+            <option value="project">Project Collaboration</option>
+            <option value="freelance">Freelance Work</option>
+            <option value="other">Other</option>
+        </select>
+
+        <textarea id="message" placeholder="Your Message"></textarea>
+
+        <label>
+            <input type="checkbox" id="terms">
+            I agree to be contacted back.
+        </label>
+
+        <button type="submit">Submit</button>
+
+        <p id="formStatus"></p>
+
+    </form>
+
+    <div style="text-align:center; margin-top:20px;">
+        <a href="index.html">← Back to Portfolio</a>
+    </div>
+
+</div>
+
+<script src="form.js"></script>
+
+</body>
+</html>
